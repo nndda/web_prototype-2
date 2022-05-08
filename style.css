@@ -1,0 +1,90 @@
+body {
+  background-color: #000;
+  color: black;
+  /*text-align: center;*/
+  font-size: 12px;
+  font-family: monospace;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+
+input {
+  background-color: transparent;
+  color: none;
+  border: solid 2px var(--primary-col);
+}
+button {
+  /*background-color: transparent;*/
+  /*border: solid 2px var(--primary-col);*/
+}
+button:hover {
+  /*background-color: white;*/
+  /*color: none;*/
+  /*border: solid 4px white;*/
+}
+
+.btn_a {
+  position: relative;
+  color: rgba(0, 0, 0, 0);
+  background-color: var(--secondary-col);
+  border: none;
+  border-right: solid 2px var(--secondary-col);
+  border-bottom: solid 2px var(--secondary-col);
+  cursor: copy;
+  /*margin-left: 4px;*/
+} .btn_a::after {
+  position: absolute;
+  content: attr(name);
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 2px black;
+  width: 100%;
+  height: 100%;
+  top: -7px;
+  left: -7px;
+  transition: 0.2s;
+  /*margin-left: 4px;*/
+} .btn_a:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+
+
+
+.warning {
+  width: 100vw;
+  height: 24px;
+  position: relative;
+  border: solid 1px black;
+  display: inline-block;
+}
+.warning:nth-child(2) {
+   width: 220px;  
+}
+
+.loop_0 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.loop_0:before, .loop_0:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/wip_label.png");
+    background-size: 200px;
+    animation: move 15s infinite linear;
+}
+
+.loop_0:before {
+    right: 100%;
+}
+
+@keyframes move {
+    from {transform: translateX(  0%);}
+      to {transform: translateX(100%);}
+}
+

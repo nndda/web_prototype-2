@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>nnda</title>
+
+	<script type="text/javascript" src="script.js"></script>
+
+	<link 
+		rel="stylesheet" 
+		href="https://cdn.jsdelivr.net/npm/normalize.css">
+	<link 
+		rel="stylesheet" 
+		href="./style.css">
+	<link 
+		rel="stylesheet" 
+		href="./content.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- 	<div class="warning">
+		<div class="loop_0">
+		</div>
+	</div> -->
+<!-- 	<div class="loop_0" style="text-align: center;">WORK IN PROGRESS</div> -->
+	
+		<!-- <br> -->
+		<h4 style="
+			background-color: #000;
+			display: flex;
+			justify-content: space-between;">
+			<span id="greet"></span>
+			<span id="h_links" >
+				<a href="#">
+					<mark> Source Code </mark></a> | 
+				<a href="#">
+					<mark> Contact Me </mark></a> |
+				</span>
+		</h4>
+
+
+
+		<div class="tile_container">
+
+		<div id="itm_self" class="tile_sqr">
+
+			<mark style="
+				background-color: var(--dark-bg);
+				color: var(--primary-col);
+				font-size: x-large;">
+					I'm Nanda <sub style="font-size: x-small;">(thats me)</sub></mark>
+				<span style="
+					color: var(--dark-bg);
+					font-size: 65%;">
+					<br>
+						Designer &#8226; Developer &#8226; Artist
+				</span>
+			<br>
+
+			<p align="left" style="color: var(--dark-bg);">
+				A <strike>half-ded</strike> Front-End Developer and Digital Art Hobbyist.</p>
+
+			<mark style="
+				position: relative;
+				letter-spacing: 1px;
+				padding: 0px 4px;
+				background-color: var(--dark-bg);
+				color: var(--primary-col);
+				font-size: x-small;
+				top: 23px;
+				">
+				about me
+				</mark>
+
+			<br>
+
+			</div>
+
+		<div id="itm_future" class="tile_tall">
+			<h3>things i do</h3>
+			<br>
+			<p>
+				I do Digital Arts ranging from Character Design to Pixel Arts. and sometimes Programming and Front-End Web Design. 
+			</p>
+			^^^^^^^^^^^^^^
+			</div>
+
+		<div id="itm_codes" class="tile_sqr">
+			<div id="window_btn">
+				&#128469;
+				&#128470;
+				&#128473;
+				</div>
+			<p style="font-family: monospace;">
+				<mark>I speaks in:</mark>
+				<br>&#8226;HTML5
+				<br>&#8226;CSS
+				<br>&#8226;JavaScript
+				<br>&#8226;Python
+				<br>&#8226;<span id="typeanim"></span>
+				</p>
+			</div>
+
+		<div id="itm_chrs" class="tile_sqr"
+			style="
+			position: relative;">
+			<h3 style="
+				margin-left: -1px;
+				margin-top: 190px;
+				letter-spacing: 3px;
+				animation: scrollText 20s infinite linear;
+				">Character Design Character Design Character Design Character Design</h3>
+			<img src="test_img/chrs.jpg" style="
+				max-width: 240px;
+				display: block;
+				height: auto;
+				margin-left: 22px;
+				margin-right: auto;
+				mix-blend-mode: hard-light;">
+			</div>
+
+		<div id="itm_ui" class="tile_sqr"
+			style="
+			position: relative;">
+			<h3 style="
+  				font-family: 'Segoe UI';
+				background-color: var(--secondary-col);
+  				font-size: small;
+				margin-left: -1px;
+				margin-top: 190px;
+				letter-spacing: 1px;
+				animation: scrollText 18s infinite linear;
+				">User Interface Design User Interface Design User Interface Design</h3>
+<!-- 			<img src="test_img/rpg-7.png" style="
+				max-width: 240px;
+				display: block;
+				height: auto;
+				margin-left: 22px;
+				margin-right: auto;
+				mix-blend-mode: hard-light;"> -->
+			</div>
+
+		<div id="itm_pixlart" class="tile_sqr"
+			style="
+			position: relative;">
+			<h3 style="
+  				font-family: 'Press Start 2P';
+  				font-size: small;
+				margin-left: -1px;
+				margin-top: 190px;
+				letter-spacing: 1px;
+				animation: scrollText 18s infinite linear;
+				">Pixel Art Pixel Art Pixel Art Pixel Art Pixel Art</h3>
+			<img src="test_img/u.png" style="
+				max-width: 240px;
+				display: block;
+				height: auto;
+				margin-left: 22px;
+				margin-right: auto;
+				mix-blend-mode: hard-light;"></div>
+
+		<div id="itm_customize" class="tile_sqr">
+			Despise the color? pick your own!
+
+			<br>	
+			<label for="color_p">Primary Color</label>
+			<input type="color" value="#59FFEB" id="color_p"
+			style="width: 100%;">
+
+			<br>
+			<label for="color_s">Secondary Color</label>
+			<input type="color" value="#F9F913" id="color_s"
+			style="width: 100%;">
+
+			<br>
+			<br>
+			<button onclick="reset_col();" style="width: 100%;"> Reset </button>
+			</div>
+
+		<div id="itm_contacts" class="tile_sqr">
+			Question? Critics? Suggestion?
+			<p style="margin-left: 6px;">
+			<br>
+			<button class="btn_a" name="Discord">Discord</button>
+			<br>
+			<br>
+			<button class="btn_a" name="Email">Email</button>
+			<br>
+			<br>
+			click to copy
+			</p>
+
+			<h3 style="
+			text-transform: lowercase;
+			color: var(--primary-col);
+			background-color: var(--dark-bg);
+			margin-left: 158px;
+			margin-top: 1px;
+			">get in touch</h3>
+			</div>
+
+		<div id="itm_w" class="tile_sqr">idk what to put here</div>
+
+		<div id="itm_gallery" class="tile_wide">
+			Find more of my visual works here:
+			<button>
+			<!-- 			<iframe style="border-radius:0px;
+			text-align: center;
+			mix-blend-mode: darken;" src="https://open.spotify.com/embed/playlist/5u9sSFq2sXaxY25qOMNKg2?utm_source=generator&theme=0" width="360" height="180" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> -->
+			</div>
+
+		<div id="itm_compare" class="tile_wide">
+			<iframe style="border-radius:0px; mix-blend-mode: hard-light;" src="https://open.spotify.com/embed/playlist/3pp3s6VzZ10SmRwP97fGao?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+			</div>
+
+		<div class="tile_sqr">
+			Sample Text 37
+			</div>
+
+		<div class="tile_sqr">
+			Sample Text 38
+			</div>
+
+		<div class="tile_sqr">
+			Sample Text 39
+			</div>
+
+		<div class="tile_sqr">
+			Sample Text 30
+			</div>
+
+		<div class="tile_sqr">
+			Sample Text 399
+			</div>
+
+		</div>
+
+</body>
+
+
+<p align="center"><mark>Disclaimer: this is a prototype website that used sample images and text. I do not own some of the image used</mark></p>
+
+</html>
